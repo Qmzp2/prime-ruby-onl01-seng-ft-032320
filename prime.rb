@@ -1,9 +1,10 @@
 # Add  code here!
 
 def prime?(num)
+  num = num.abs
   n = 2
-  while n < num.abs
-  return false if num.abs % == 0
+  while n < num
+  return false if num % == 0
   n += 1
 end
 true
