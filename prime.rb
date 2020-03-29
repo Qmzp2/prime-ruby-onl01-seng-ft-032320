@@ -1,11 +1,9 @@
 # Add  code here!
 
+
 def prime?(num)
-  num = num.abs
-  n = 2
-  while n < num
-  return false if num % == 0
-  n += 1
-end
-true
+  (2..(num.abs - 1)).each do |n| 
+    return false if num % n == 0
+  end
+  true
 end
